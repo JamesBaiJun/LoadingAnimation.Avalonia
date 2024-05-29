@@ -13,10 +13,6 @@
         mc:Ignorable="d">
 
     <Design.DataContext>
-        <!--
-            This only sets the DataContext for the previewer in an IDE,
-            to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs)
-        -->
         <vm:MainWindowViewModel />
     </Design.DataContext>
 
@@ -25,9 +21,18 @@
             <ListBoxItem>The Classic</ListBoxItem>
             <ListBoxItem>The Dots</ListBoxItem>
             <ListBoxItem>The Bars</ListBoxItem>
+            <ListBoxItem>The Spinner</ListBoxItem>
         </ListBox>
 
         <ContentControl x:Name="MainContent" Grid.Column="1">
+            <ContentControl.Styles>
+                <Style Selector="Border">
+                    <Setter Property="Margin" Value="8" />
+                    <Setter Property="BorderBrush" Value="{StaticResource ShadowBrush}" />
+                    <Setter Property="BorderThickness" Value="1" />
+                    <Setter Property="CornerRadius" Value="4" />
+                </Style>
+            </ContentControl.Styles>
             <local:ClassicPage />
         </ContentControl>
     </Grid>

@@ -1,27 +1,24 @@
-<UserControl x:Class="LoadingAnimation.Avalonia.Demo.Views.BarsPage"
+<UserControl x:Class="LoadingAnimation.Avalonia.Demo.Views.SpinnerPage"
              xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:bars="using:LoadingAnimation.Avalonia.Bars"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:spinner="using:LoadingAnimation.Avalonia.Spinner"
              d:DesignHeight="450"
              d:DesignWidth="800"
              mc:Ignorable="d">
     <UniformGrid>
         <Border>
-            <bars:Bar1 />
+            <spinner:Spinner1 />
         </Border>
-
-        <Border>
-            <bars:Bar2 />
-        </Border>
-		
-        <Border>
-            <bars:Bar3 />
-        </Border>
-		
-        <Border>
-            <bars:Bar4 />
-        </Border>
+		<Border>
+			<spinner:Spinner2 />
+		</Border>
+		<Border>
+			<spinner:Spinner3 />
+		</Border>
+		<Border>
+			<spinner:Spinner4 />
+		</Border>
     </UniformGrid>
 </UserControl>

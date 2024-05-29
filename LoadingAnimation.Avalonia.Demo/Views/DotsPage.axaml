@@ -8,41 +8,28 @@
              d:DesignWidth="800"
              mc:Ignorable="d">
     <UniformGrid>
-        <Border Margin="8"
-                BorderBrush="{StaticResource ShadowBrush}"
-                BorderThickness="1"
-                CornerRadius="4">
+        <Border>
             <dots:Dots1 />
         </Border>
-        <Border Margin="8"
-                BorderBrush="{StaticResource ShadowBrush}"
-                BorderThickness="1"
-                CornerRadius="4">
+
+        <Border>
             <dots:Dots2 />
         </Border>
-        <Border Margin="8"
-                BorderBrush="{StaticResource ShadowBrush}"
-                BorderThickness="1"
-                CornerRadius="4">
+
+        <Border>
             <dots:Dots3 />
         </Border>
-        <Border Margin="8"
-                BorderBrush="{StaticResource ShadowBrush}"
-                BorderThickness="1"
-                CornerRadius="4">
+
+        <Border>
             <dots:Dots4 />
         </Border>
-        <Border Margin="8"
-                BorderBrush="{StaticResource ShadowBrush}"
-                BorderThickness="1"
-                CornerRadius="4">
+
+        <Border>
             <dots:Dots5 />
         </Border>
-		<Border Margin="8"
-			   BorderBrush="{StaticResource ShadowBrush}"
-			   BorderThickness="1"
-			   CornerRadius="4">
-			<dots:Dots6 />
-		</Border>
+
+        <Border>
+            <dots:Dots6 />
+        </Border>
     </UniformGrid>
 </UserControl>

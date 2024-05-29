@@ -11,7 +11,7 @@ using System;
 
 namespace LoadingAnimation.Avalonia.Classic
 {
-    public partial class Classic3 : UserControl
+    public partial class Classic3 : ClassicBase
     {
         public Classic3()
         {

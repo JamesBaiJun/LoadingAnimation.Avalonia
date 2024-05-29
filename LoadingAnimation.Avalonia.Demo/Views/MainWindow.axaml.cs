@@ -33,6 +33,9 @@ namespace LoadingAnimation.Avalonia.Demo.Views
                 case "The Bars":
                     MainContent.Content = new BarsPage();
                     break;
+                case "The Spinner":
+                    MainContent.Content = new SpinnerPage();
+                    break;
                 default:
                     break;
             }

@@ -9,7 +9,7 @@ using System;
 
 namespace LoadingAnimation.Avalonia.Classic
 {
-    public partial class Classic6 : UserControl
+    public partial class Classic6 : ClassicBase
     {
         public Classic6()
         {

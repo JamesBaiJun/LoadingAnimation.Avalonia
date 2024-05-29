@@ -5,49 +5,32 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:l="using:LoadingAnimation.Avalonia.LoadingControls.Demo"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:LoadingAnimation.Avalonia.Demo.ViewModels"
              d:DesignHeight="450"
              d:DesignWidth="800"
              mc:Ignorable="d">
     <UniformGrid>
-        <Border Margin="8"
-                BorderBrush="{StaticResource ShadowBrush}"
-                BorderThickness="1"
-                CornerRadius="4">
+        <Border>
             <classic:Classic1 />
         </Border>
 
-        <Border Margin="8"
-                BorderBrush="{StaticResource ShadowBrush}"
-                BorderThickness="1"
-                CornerRadius="4">
-            <classic:Classic2 />
+        <Border>
+            <classic:Classic2 x:DataType="vm:MainWindowViewModel" CaptionText="{Binding TestStr}" />
         </Border>
 
-        <Border Margin="8"
-                BorderBrush="{StaticResource ShadowBrush}"
-                BorderThickness="1"
-                CornerRadius="4">
+        <Border>
             <classic:Classic3 />
         </Border>
 
-
-        <Border Margin="8"
-                BorderBrush="{StaticResource ShadowBrush}"
-                BorderThickness="1"
-                CornerRadius="4">
+        <Border>
             <classic:Classic4 />
         </Border>
-        <Border Margin="8"
-                BorderBrush="{StaticResource ShadowBrush}"
-                BorderThickness="1"
-                CornerRadius="4">
+
+        <Border>
             <classic:Classic5 />
         </Border>
 
-        <Border Margin="8"
-                BorderBrush="{StaticResource ShadowBrush}"
-                BorderThickness="1"
-                CornerRadius="4">
+        <Border>
             <classic:Classic6 />
         </Border>
     </UniformGrid>

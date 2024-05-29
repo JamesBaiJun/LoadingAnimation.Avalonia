@@ -1,0 +1,35 @@
+<UserControl x:Class="LoadingAnimation.Avalonia.Spinner.Spinner4"
+             xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             d:DesignHeight="450"
+             d:DesignWidth="800"
+             mc:Ignorable="d">
+    <Grid>
+        <Grid.Styles>
+            <Style Selector="Ellipse#Ellipse1">
+                <Style.Animations>
+                    <Animation IterationCount="Infinite" Duration="0:0:1">
+                        <KeyFrame Cue="0%">
+                            <Setter Property="RotateTransform.Angle" Value="0" />
+                        </KeyFrame>
+                        <KeyFrame Cue="50%">
+                            <Setter Property="RotateTransform.Angle" Value="180" />
+                        </KeyFrame>
+                        <KeyFrame Cue="100%">
+                            <Setter Property="RotateTransform.Angle" Value="360" />
+                        </KeyFrame>
+                    </Animation>
+                </Style.Animations>
+            </Style>
+        </Grid.Styles>
+
+        <Ellipse x:Name="Ellipse1"
+                 Width="50"
+                 Height="50"
+                 Fill="{StaticResource PrimaryBrush}"
+                 RenderTransformOrigin="26,26" />
+        <Ellipse Width="40" Height="40" Fill="White" />
+    </Grid>
+</UserControl>

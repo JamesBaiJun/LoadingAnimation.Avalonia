@@ -2,13 +2,14 @@
              xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:local="using:LoadingAnimation.Avalonia.Classic"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              d:DesignHeight="450"
              d:DesignWidth="800"
              mc:Ignorable="d">
     <Grid>
         <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Margin="4" Text="Loading..." />
+            <TextBlock Margin="4" Text="{Binding $parent[local:Classic5].CaptionText}" />
             <Grid x:Name="maskGrid" Background="{StaticResource PrimaryBrush}">
                 <TextBlock Margin="4" Foreground="White" Text="Loading..." />
             </Grid>
