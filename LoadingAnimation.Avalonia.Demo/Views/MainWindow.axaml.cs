@@ -1,7 +1,7 @@
 using Avalonia.Controls;
-using LoadingAnimation.Avalonia.Classic;
 
-namespace LoadingAnimation.Avalonia.Views
+
+namespace LoadingAnimation.Avalonia.Demo.Views
 {
     public partial class MainWindow : Window
     {

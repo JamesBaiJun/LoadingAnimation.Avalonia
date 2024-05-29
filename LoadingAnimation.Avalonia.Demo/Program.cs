@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace LoadingAnimation.Avalonia
+namespace LoadingAnimation.Avalonia.Demo
 {
     internal sealed class Program
     {

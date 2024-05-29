@@ -1,8 +1,8 @@
-<UserControl x:Class="LoadingAnimation.Avalonia.Views.BarsPage"
+<UserControl x:Class="LoadingAnimation.Avalonia.Demo.Views.DotsPage"
              xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:bars="using:LoadingAnimation.Avalonia.Bars"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dots="using:LoadingAnimation.Avalonia.Dots"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              d:DesignHeight="450"
              d:DesignWidth="800"
@@ -12,20 +12,37 @@
                 BorderBrush="{StaticResource ShadowBrush}"
                 BorderThickness="1"
                 CornerRadius="4">
-            <bars:Bar1 />
+            <dots:Dots1 />
         </Border>
-
-		<Border Margin="8"
+        <Border Margin="8"
                 BorderBrush="{StaticResource ShadowBrush}"
                 BorderThickness="1"
                 CornerRadius="4">
-			<bars:Bar2 />
-		</Border>
-		<Border Margin="8"
+            <dots:Dots2 />
+        </Border>
+        <Border Margin="8"
                 BorderBrush="{StaticResource ShadowBrush}"
                 BorderThickness="1"
                 CornerRadius="4">
-			<bars:Bar3 />
+            <dots:Dots3 />
+        </Border>
+        <Border Margin="8"
+                BorderBrush="{StaticResource ShadowBrush}"
+                BorderThickness="1"
+                CornerRadius="4">
+            <dots:Dots4 />
+        </Border>
+        <Border Margin="8"
+                BorderBrush="{StaticResource ShadowBrush}"
+                BorderThickness="1"
+                CornerRadius="4">
+            <dots:Dots5 />
+        </Border>
+		<Border Margin="8"
+			   BorderBrush="{StaticResource ShadowBrush}"
+			   BorderThickness="1"
+			   CornerRadius="4">
+			<dots:Dots6 />
 		</Border>
     </UniformGrid>
 </UserControl>

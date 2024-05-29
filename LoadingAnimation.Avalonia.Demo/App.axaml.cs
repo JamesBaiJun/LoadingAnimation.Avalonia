@@ -1,16 +1,13 @@
 using Avalonia;
-using Avalonia.Animation;
 using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Data.Core;
 using Avalonia.Data.Core.Plugins;
 using Avalonia.Markup.Xaml;
-using Avalonia.Media;
-using LoadingAnimation.Avalonia.Animators;
-using LoadingAnimation.Avalonia.ViewModels;
-using LoadingAnimation.Avalonia.Views;
+using LoadingAnimation.Avalonia.Demo.ViewModels;
+using LoadingAnimation.Avalonia.Demo.Views;
 
-namespace LoadingAnimation.Avalonia
+namespace LoadingAnimation.Avalonia.Demo
 {
     public partial class App : Application
     {
@@ -29,11 +26,10 @@ namespace LoadingAnimation.Avalonia
                 desktop.MainWindow = new MainWindow
                 {
                     DataContext = new MainWindowViewModel(),
-                    Width = 700,
+                    Width = 600,
                     Height = 450,
                     WindowStartupLocation = WindowStartupLocation.CenterScreen,
                 };
-                Animation.RegisterCustomAnimator<Geometry, GeometryAnimator>();
             }
 
             base.OnFrameworkInitializationCompleted();

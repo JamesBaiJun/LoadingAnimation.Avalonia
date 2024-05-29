@@ -1,9 +1,8 @@
-<UserControl x:Class="LoadingAnimation.Avalonia.Views.ClassicPage"
+<UserControl x:Class="LoadingAnimation.Avalonia.Demo.Views.BarsPage"
              xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:classic="using:LoadingAnimation.Avalonia.Classic"
+             xmlns:bars="using:LoadingAnimation.Avalonia.Bars"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:l="using:LoadingAnimation.Avalonia.LoadingControls"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              d:DesignHeight="450"
              d:DesignWidth="800"
@@ -13,42 +12,26 @@
                 BorderBrush="{StaticResource ShadowBrush}"
                 BorderThickness="1"
                 CornerRadius="4">
-            <classic:Classic1 />
+            <bars:Bar1 />
         </Border>
 
         <Border Margin="8"
                 BorderBrush="{StaticResource ShadowBrush}"
                 BorderThickness="1"
                 CornerRadius="4">
-            <classic:Classic2 />
-        </Border>
-
-        <Border Margin="8"
-                BorderBrush="{StaticResource ShadowBrush}"
-                BorderThickness="1"
-                CornerRadius="4">
-            <classic:Classic3 />
-        </Border>
-
-
-        <Border Margin="8"
-                BorderBrush="{StaticResource ShadowBrush}"
-                BorderThickness="1"
-                CornerRadius="4">
-            <classic:Classic4 />
+            <bars:Bar2 />
         </Border>
         <Border Margin="8"
                 BorderBrush="{StaticResource ShadowBrush}"
                 BorderThickness="1"
                 CornerRadius="4">
-            <classic:Classic5 />
+            <bars:Bar3 />
         </Border>
-
         <Border Margin="8"
                 BorderBrush="{StaticResource ShadowBrush}"
                 BorderThickness="1"
                 CornerRadius="4">
-            <classic:Classic6 />
+            <bars:Bar4 />
         </Border>
     </UniformGrid>
 </UserControl>

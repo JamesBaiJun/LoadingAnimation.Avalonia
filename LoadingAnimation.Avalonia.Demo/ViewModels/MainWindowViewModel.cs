@@ -1,4 +1,4 @@
-﻿namespace LoadingAnimation.Avalonia.ViewModels
+﻿namespace LoadingAnimation.Avalonia.Demo.ViewModels
 {
     public partial class MainWindowViewModel : ViewModelBase
     {

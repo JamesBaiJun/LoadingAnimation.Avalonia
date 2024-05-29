@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace LoadingAnimation.Avalonia.Views
+namespace LoadingAnimation.Avalonia.Demo.Views
 {
     public partial class BarsPage : UserControl
     {

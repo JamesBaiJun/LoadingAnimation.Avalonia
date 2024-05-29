@@ -1,9 +1,9 @@
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
-using LoadingAnimation.Avalonia.ViewModels;
+using LoadingAnimation.Avalonia.Demo.ViewModels;
 using System;
 
-namespace LoadingAnimation.Avalonia
+namespace LoadingAnimation.Avalonia.Demo
 {
     public class ViewLocator : IDataTemplate
     {
