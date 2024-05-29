@@ -1,5 +1,7 @@
 ﻿using Avalonia;
 using Avalonia.Animation;
+using Avalonia.Controls.Shapes;
+using Avalonia.Controls;
 using Avalonia.Media;
 using System;
 using System.Collections.Generic;
@@ -19,8 +21,6 @@ namespace LoadingAnimation.Avalonia.Animators
         {
             if (oldValue is RectangleGeometry oldRect && newValue is RectangleGeometry newRect)
             {
-                //var centerX = oldEllipse.Center.X + (newEllipse.Center.X - oldEllipse.Center.X) * progress;
-                //var centerY = oldEllipse.Center.Y + (newEllipse.Center.Y - oldEllipse.Center.Y) * progress;
                 var radiusX = oldRect.Rect.Width + (newRect.Rect.Width - oldRect.Rect.Width) * progress;
                 var radiusY = oldRect.Rect.Height + (newRect.Rect.Height - oldRect.Rect.Height) * progress;
 

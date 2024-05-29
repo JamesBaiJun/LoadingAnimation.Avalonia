@@ -1,5 +1,6 @@
 using Avalonia;
 using Avalonia.Animation;
+using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Data.Core;
 using Avalonia.Data.Core.Plugins;
@@ -28,6 +29,9 @@ namespace LoadingAnimation.Avalonia
                 desktop.MainWindow = new MainWindow
                 {
                     DataContext = new MainWindowViewModel(),
+                    Width = 700,
+                    Height = 450,
+                    WindowStartupLocation = WindowStartupLocation.CenterScreen,
                 };
                 Animation.RegisterCustomAnimator<Geometry, GeometryAnimator>();
             }

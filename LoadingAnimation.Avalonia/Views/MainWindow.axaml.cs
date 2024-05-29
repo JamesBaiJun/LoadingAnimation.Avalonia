@@ -30,6 +30,9 @@ namespace LoadingAnimation.Avalonia.Views
                 case "The Dots":
                     MainContent.Content = new DotsPage();
                     break;
+                case "The Bars":
+                    MainContent.Content = new BarsPage();
+                    break;
                 default:
                     break;
             }

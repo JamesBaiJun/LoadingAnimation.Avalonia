@@ -9,11 +9,46 @@
              d:DesignWidth="800"
              mc:Ignorable="d">
     <UniformGrid>
-        <classic:Classic1 Width="100" Height="100" />
-        <classic:Classic2 Width="100" Height="100" />
-        <classic:Classic3 Width="100" Height="100" />
-		<classic:Classic4 Width="100" Height="100" />
-		<classic:Classic5 Width="100" Height="100" />
-		<classic:Classic6 Width="100" Height="100" />
+        <Border Margin="8"
+                BorderBrush="{StaticResource ShadowBrush}"
+                BorderThickness="1"
+                CornerRadius="4">
+            <classic:Classic1 />
+        </Border>
+
+        <Border Margin="8"
+                BorderBrush="{StaticResource ShadowBrush}"
+                BorderThickness="1"
+                CornerRadius="4">
+            <classic:Classic2 />
+        </Border>
+
+        <Border Margin="8"
+                BorderBrush="{StaticResource ShadowBrush}"
+                BorderThickness="1"
+                CornerRadius="4">
+            <classic:Classic3 />
+        </Border>
+
+
+        <Border Margin="8"
+                BorderBrush="{StaticResource ShadowBrush}"
+                BorderThickness="1"
+                CornerRadius="4">
+            <classic:Classic4 />
+        </Border>
+        <Border Margin="8"
+                BorderBrush="{StaticResource ShadowBrush}"
+                BorderThickness="1"
+                CornerRadius="4">
+            <classic:Classic5 />
+        </Border>
+
+        <Border Margin="8"
+                BorderBrush="{StaticResource ShadowBrush}"
+                BorderThickness="1"
+                CornerRadius="4">
+            <classic:Classic6 />
+        </Border>
     </UniformGrid>
 </UserControl>
