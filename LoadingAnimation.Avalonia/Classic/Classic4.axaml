@@ -1,0 +1,38 @@
+<UserControl x:Class="LoadingAnimation.Avalonia.Classic.Classic4"
+             xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             d:DesignHeight="450"
+             d:DesignWidth="800"
+             mc:Ignorable="d">
+    <Grid>
+        <Grid HorizontalAlignment="Center" Width="70" VerticalAlignment="Center" ClipToBounds="True">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel.RenderTransform>
+                    <TranslateTransform />
+                </StackPanel.RenderTransform>
+                <TextBlock Width="90" Text="Loading..." />
+                <TextBlock Width="90" Text="Loading..." />
+                <TextBlock Width="90" Text="Loading..." />
+				<StackPanel.Styles>
+					<Style Selector="TextBlock">
+						<Style.Animations>
+							<Animation IterationCount="Infinite" Duration="0:0:2">
+								<KeyFrame Cue="0%">
+									<Setter Property="TranslateTransform.X" Value="0" />
+								</KeyFrame>
+								<KeyFrame Cue="50%">
+									<Setter Property="TranslateTransform.X" Value="-90" />
+								</KeyFrame>
+								<KeyFrame Cue="100%">
+									<Setter Property="TranslateTransform.X" Value="-180" />
+								</KeyFrame>
+							</Animation>
+						</Style.Animations>
+					</Style>
+				</StackPanel.Styles>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

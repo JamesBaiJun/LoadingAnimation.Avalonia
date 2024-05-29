@@ -1,0 +1,22 @@
+<Application x:Class="LoadingAnimation.Avalonia.App"
+             xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="using:LoadingAnimation.Avalonia"
+             RequestedThemeVariant="Default">
+    <!--  "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options.  -->
+
+    <Application.DataTemplates>
+        <local:ViewLocator />
+    </Application.DataTemplates>
+
+    <Application.Styles>
+        <FluentTheme />
+    </Application.Styles>
+    <Application.Resources>
+        <ResourceDictionary>
+            <SolidColorBrush x:Key="PrimaryBrush" Color="#44B7FF" />
+            <SolidColorBrush x:Key="AccentBrush" Color="#39FFE6" />
+            <SolidColorBrush x:Key="ShadowBrush" Color="#8A8A8A" />
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

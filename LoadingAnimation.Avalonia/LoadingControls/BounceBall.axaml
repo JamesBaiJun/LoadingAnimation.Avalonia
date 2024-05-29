@@ -1,0 +1,88 @@
+<UserControl x:Class="LoadingAnimation.Avalonia.LoadingControls.BounceBall"
+             xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             d:DesignHeight="450"
+             d:DesignWidth="800"
+             mc:Ignorable="d">
+    <Viewbox>
+        <Grid Width="60" Height="300">
+            <Ellipse Width="40" Height="40" Fill="{StaticResource ShadowBrush}">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform Y="50" />
+                        <ScaleTransform />
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+                <Ellipse.Styles>
+                    <Style Selector="Ellipse">
+                        <Style.Animations>
+                            <Animation IterationCount="Infinite" Duration="0:0:1">
+                                <KeyFrame Cue="0%">
+                                    <Setter Property="ScaleTransform.ScaleX" Value="1.5" />
+                                    <Setter Property="ScaleTransform.ScaleY" Value="0.2" />
+                                </KeyFrame>
+
+                                <KeyFrame Cue="60%">
+                                    <Setter Property="ScaleTransform.ScaleX" Value="0.4" />
+                                    <Setter Property="ScaleTransform.ScaleY" Value="0.2" />
+                                </KeyFrame>
+
+                                <KeyFrame Cue="85%">
+                                    <Setter Property="ScaleTransform.ScaleX" Value="1.2" />
+                                    <Setter Property="ScaleTransform.ScaleY" Value="0.3" />
+                                </KeyFrame>
+
+                                <KeyFrame Cue="100%">
+                                    <Setter Property="ScaleTransform.ScaleX" Value="1.5" />
+                                    <Setter Property="ScaleTransform.ScaleY" Value="0.2" />
+                                </KeyFrame>
+                            </Animation>
+                        </Style.Animations>
+                    </Style>
+                </Ellipse.Styles>
+            </Ellipse>
+
+            <Ellipse Width="40" Height="40" Fill="{StaticResource PrimaryBrush}">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform />
+                        <ScaleTransform />
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+                <Ellipse.Styles>
+                    <Style Selector="Ellipse">
+                        <Style.Animations>
+                            <Animation IterationCount="Infinite" Duration="0:0:1">
+                                <KeyFrame Cue="0%">
+                                    <Setter Property="TranslateTransform.Y" Value="0" />
+                                    <Setter Property="ScaleTransform.ScaleX" Value="1" />
+                                    <Setter Property="ScaleTransform.ScaleY" Value="0.8" />
+                                </KeyFrame>
+
+                                <KeyFrame Cue="60%">
+                                    <Setter Property="TranslateTransform.Y" Value="-100" />
+                                    <Setter Property="ScaleTransform.ScaleX" Value="0.8" />
+                                    <Setter Property="ScaleTransform.ScaleY" Value="1.2" />
+                                </KeyFrame>
+
+                                <KeyFrame Cue="85%">
+                                    <Setter Property="TranslateTransform.Y" Value="-60" />
+                                    <Setter Property="ScaleTransform.ScaleX" Value="1.05" />
+                                    <Setter Property="ScaleTransform.ScaleY" Value="0.7" />
+                                </KeyFrame>
+
+                                <KeyFrame Cue="100%">
+                                    <Setter Property="TranslateTransform.Y" Value="0" />
+                                    <Setter Property="ScaleTransform.ScaleX" Value="1" />
+                                    <Setter Property="ScaleTransform.ScaleY" Value="0.8" />
+                                </KeyFrame>
+                            </Animation>
+                        </Style.Animations>
+                    </Style>
+                </Ellipse.Styles>
+            </Ellipse>
+        </Grid>
+    </Viewbox>
+</UserControl>

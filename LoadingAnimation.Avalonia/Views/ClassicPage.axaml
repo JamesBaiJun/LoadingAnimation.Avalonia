@@ -1,0 +1,19 @@
+<UserControl x:Class="LoadingAnimation.Avalonia.Views.ClassicPage"
+             xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:classic="using:LoadingAnimation.Avalonia.Classic"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:l="using:LoadingAnimation.Avalonia.LoadingControls"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             d:DesignHeight="450"
+             d:DesignWidth="800"
+             mc:Ignorable="d">
+    <UniformGrid>
+        <classic:Classic1 Width="100" Height="100" />
+        <classic:Classic2 Width="100" Height="100" />
+        <classic:Classic3 Width="100" Height="100" />
+		<classic:Classic4 Width="100" Height="100" />
+		<classic:Classic5 Width="100" Height="100" />
+		<classic:Classic6 Width="100" Height="100" />
+    </UniformGrid>
+</UserControl>

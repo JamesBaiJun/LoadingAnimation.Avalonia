@@ -1,0 +1,16 @@
+<UserControl x:Class="LoadingAnimation.Avalonia.Views.DotsPage"
+             xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dots="using:LoadingAnimation.Avalonia.Dots"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             d:DesignHeight="450"
+             d:DesignWidth="800"
+             mc:Ignorable="d">
+    <UniformGrid>
+		<dots:Dots1 />
+		<dots:Dots2 />
+		<dots:Dots3 />
+		<dots:Dots4 />
+    </UniformGrid>
+</UserControl>

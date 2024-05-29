@@ -1,0 +1,81 @@
+<UserControl x:Class="LoadingAnimation.Avalonia.Dots.Dots4"
+             xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             d:DesignHeight="450"
+             d:DesignWidth="800"
+             mc:Ignorable="d">
+    <Grid>
+        <Grid.Styles>
+            <Style Selector="Ellipse#Dot1">
+                <Style.Animations>
+                    <Animation Easing="CubicEaseOut" IterationCount="Infinite" Duration="0:0:1">
+                        <KeyFrame Cue="0%">
+                            <Setter Property="TranslateTransform.X" Value="-20" />
+                            <Setter Property="TranslateTransform.Y" Value="0" />
+                        </KeyFrame>
+                        <KeyFrame Cue="100%">
+                            <Setter Property="TranslateTransform.X" Value="0" />
+                            <Setter Property="TranslateTransform.Y" Value="-30" />
+                        </KeyFrame>
+                    </Animation>
+                </Style.Animations>
+            </Style>
+            <Style Selector="Ellipse#Dot2">
+                <Style.Animations>
+                    <Animation Easing="CubicEaseOut" IterationCount="Infinite" Duration="0:0:1">
+                        <KeyFrame Cue="0%">
+                            <Setter Property="TranslateTransform.X" Value="0" />
+                            <Setter Property="TranslateTransform.Y" Value="-30" />
+                        </KeyFrame>
+                        <KeyFrame Cue="100%">
+                            <Setter Property="TranslateTransform.X" Value="20" />
+                            <Setter Property="TranslateTransform.Y" Value="0" />
+                        </KeyFrame>
+                    </Animation>
+                </Style.Animations>
+            </Style>
+            <Style Selector="Ellipse#Dot3">
+                <Style.Animations>
+                    <Animation Easing="CubicEaseOut" IterationCount="Infinite" Duration="0:0:1">
+                        <KeyFrame Cue="0%">
+                            <Setter Property="TranslateTransform.X" Value="20" />
+                            <Setter Property="TranslateTransform.Y" Value="0" />
+                        </KeyFrame>
+                        <KeyFrame Cue="100%">
+                            <Setter Property="TranslateTransform.X" Value="-20" />
+                            <Setter Property="TranslateTransform.Y" Value="0" />
+                        </KeyFrame>
+                    </Animation>
+                </Style.Animations>
+            </Style>
+        </Grid.Styles>
+        <Grid>
+            <Ellipse x:Name="Dot1"
+                     Width="20"
+                     Height="20"
+                     Fill="{StaticResource PrimaryBrush}">
+                <Ellipse.RenderTransform>
+                    <TranslateTransform X="-20" Y="0" />
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Ellipse x:Name="Dot2"
+                     Width="20"
+                     Height="20"
+                     Fill="{StaticResource PrimaryBrush}">
+                <Ellipse.RenderTransform>
+                    <TranslateTransform X="0" Y="-30" />
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Ellipse x:Name="Dot3"
+                     Width="20"
+                     Height="20"
+                     Fill="{StaticResource PrimaryBrush}">
+                <Ellipse.RenderTransform>
+                    <TranslateTransform X="20" Y="0" />
+                </Ellipse.RenderTransform>
+            </Ellipse>
+        </Grid>
+    </Grid>
+</UserControl>
