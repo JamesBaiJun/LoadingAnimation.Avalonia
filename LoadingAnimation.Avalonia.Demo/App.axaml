@@ -18,7 +18,7 @@
                 <ResourceInclude Source="avares://LoadingAnimation.Avalonia/Themes/Index.axaml" />
             </ResourceDictionary.MergedDictionaries>
 
-            <SolidColorBrush x:Key="PrimaryBrush" Color="#723CFF" />
+            <SolidColorBrush x:Key="PrimaryBrush" Color="#2089F7" />
         </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -48,4 +48,8 @@
       <DependentUpon>%(Filename)</DependentUpon>
     </Compile>
   </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\ProgressPage.axaml" />
+  </ItemGroup>
 </Project>

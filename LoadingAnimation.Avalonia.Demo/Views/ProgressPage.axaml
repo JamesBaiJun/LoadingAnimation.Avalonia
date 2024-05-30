@@ -1,0 +1,24 @@
+<UserControl x:Class="LoadingAnimation.Avalonia.Demo.Views.ProgressPage"
+             xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:progress="using:LoadingAnimation.Avalonia.Progress"
+             d:DesignHeight="450"
+             d:DesignWidth="800"
+             mc:Ignorable="d">
+    <UniformGrid>
+        <Border>
+            <progress:Progress1 />
+        </Border>
+        <Border>
+            <progress:Progress2 />
+        </Border>
+		<Border>
+			<progress:Progress3 />
+		</Border>
+		<Border>
+			<progress:Progress4 />
+		</Border>
+    </UniformGrid>
+</UserControl>

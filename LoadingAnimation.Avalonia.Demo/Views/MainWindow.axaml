@@ -21,7 +21,8 @@
             <ListBoxItem>The Classic</ListBoxItem>
             <ListBoxItem>The Dots</ListBoxItem>
             <ListBoxItem>The Bars</ListBoxItem>
-            <ListBoxItem>The Spinner</ListBoxItem>
+			<ListBoxItem>The Spinner</ListBoxItem>
+			<ListBoxItem>The Progress</ListBoxItem>
         </ListBox>
 
         <ContentControl x:Name="MainContent" Grid.Column="1">
