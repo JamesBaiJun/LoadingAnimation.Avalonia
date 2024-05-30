@@ -14,11 +14,14 @@
         <Border>
             <progress:Progress2 />
         </Border>
-		<Border>
-			<progress:Progress3 />
-		</Border>
-		<Border>
-			<progress:Progress4 />
-		</Border>
+        <Border>
+            <progress:Progress3 />
+        </Border>
+        <Border>
+            <progress:Progress4 />
+        </Border>
+        <Border>
+            <progress:Progress5 />
+        </Border>
     </UniformGrid>
 </UserControl>

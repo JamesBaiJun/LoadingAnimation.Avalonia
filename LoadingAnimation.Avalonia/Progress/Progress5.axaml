@@ -1,0 +1,37 @@
+<UserControl x:Class="LoadingAnimation.Avalonia.Progress.Progress5"
+             xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             d:DesignHeight="450"
+             d:DesignWidth="800"
+             mc:Ignorable="d">
+    <Grid>
+        <Grid.Styles>
+            <Style Selector="Rectangle#Rect1">
+                <Style.Animations>
+                    <Animation Easing="CubicEaseIn" IterationCount="Infinite" Duration="0:0:1.5">
+                        <KeyFrame Cue="0%">
+                            <Setter Property="TranslateTransform.X" Value="-30" />
+                        </KeyFrame>
+                        <KeyFrame Cue="100%">
+                            <Setter Property="TranslateTransform.X" Value="80" />
+                        </KeyFrame>
+                    </Animation>
+                </Style.Animations>
+            </Style>
+        </Grid.Styles>
+
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid.Clip>
+                <RectangleGeometry Rect="0,0,80,12" />
+            </Grid.Clip>
+            <Rectangle Width="80" Height="12" Fill="{StaticResource ShadowBrush}" />
+            <Rectangle x:Name="Rect1"
+                       Width="30"
+                       Height="12"
+                       HorizontalAlignment="Left"
+                       Fill="{StaticResource PrimaryBrush}" />
+        </Grid>
+    </Grid>
+</UserControl>
