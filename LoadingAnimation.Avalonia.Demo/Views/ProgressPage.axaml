@@ -23,5 +23,8 @@
         <Border>
             <progress:Progress5 />
         </Border>
+		<Border>
+			<progress:Progress6 />
+		</Border>
     </UniformGrid>
 </UserControl>
