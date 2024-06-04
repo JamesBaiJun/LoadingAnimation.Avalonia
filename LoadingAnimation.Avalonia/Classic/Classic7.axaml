@@ -1,0 +1,129 @@
+<UserControl x:Class="LoadingAnimation.Avalonia.Classic.Classic7"
+             xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="using:LoadingAnimation.Avalonia.Classic"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             d:DesignHeight="450"
+             d:DesignWidth="800"
+             mc:Ignorable="d">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock Text="Loading..." />
+        <StackPanel Orientation="Horizontal">
+            <StackPanel.Styles>
+                <Style Selector="TextBlock#Block1">
+                    <Style.Animations>
+                        <Animation IterationCount="Infinite" Duration="0:0:2">
+                            <KeyFrame Cue="0%">
+                                <Setter Property="Effect" Value="blur(0)" />
+                            </KeyFrame>
+                            <KeyFrame Cue="10%">
+                                <Setter Property="Effect" Value="blur(12)" />
+                            </KeyFrame>
+                            <KeyFrame Cue="20%">
+                                <Setter Property="Effect" Value="blur(0)" />
+                            </KeyFrame>
+                        </Animation>
+                    </Style.Animations>
+                </Style>
+                <Style Selector="TextBlock#Block2">
+                    <Style.Animations>
+                        <Animation IterationCount="Infinite" Duration="0:0:2">
+                            <KeyFrame Cue="10%">
+                                <Setter Property="Effect" Value="blur(0)" />
+                            </KeyFrame>
+                            <KeyFrame Cue="20%">
+                                <Setter Property="Effect" Value="blur(12)" />
+                            </KeyFrame>
+                            <KeyFrame Cue="30%">
+                                <Setter Property="Effect" Value="blur(0)" />
+                            </KeyFrame>
+                        </Animation>
+                    </Style.Animations>
+                </Style>
+                <Style Selector="TextBlock#Block3">
+                    <Style.Animations>
+                        <Animation IterationCount="Infinite" Duration="0:0:2">
+                            <KeyFrame Cue="30%">
+                                <Setter Property="Effect" Value="blur(0)" />
+                            </KeyFrame>
+                            <KeyFrame Cue="40%">
+                                <Setter Property="Effect" Value="blur(12)" />
+                            </KeyFrame>
+                            <KeyFrame Cue="50%">
+                                <Setter Property="Effect" Value="blur(0)" />
+                            </KeyFrame>
+                        </Animation>
+                    </Style.Animations>
+                </Style>
+                <Style Selector="TextBlock#Block4">
+                    <Style.Animations>
+                        <Animation IterationCount="Infinite" Duration="0:0:2">
+                            <KeyFrame Cue="40%">
+                                <Setter Property="Effect" Value="blur(0)" />
+                            </KeyFrame>
+                            <KeyFrame Cue="50%">
+                                <Setter Property="Effect" Value="blur(12)" />
+                            </KeyFrame>
+                            <KeyFrame Cue="60%">
+                                <Setter Property="Effect" Value="blur(0)" />
+                            </KeyFrame>
+                        </Animation>
+                    </Style.Animations>
+                </Style>
+                <Style Selector="TextBlock#Block5">
+                    <Style.Animations>
+                        <Animation IterationCount="Infinite" Duration="0:0:2">
+                            <KeyFrame Cue="50%">
+                                <Setter Property="Effect" Value="blur(0)" />
+                            </KeyFrame>
+                            <KeyFrame Cue="60%">
+                                <Setter Property="Effect" Value="blur(12)" />
+                            </KeyFrame>
+                            <KeyFrame Cue="70%">
+                                <Setter Property="Effect" Value="blur(0)" />
+                            </KeyFrame>
+                        </Animation>
+                    </Style.Animations>
+                </Style>
+                <Style Selector="TextBlock#Block6">
+                    <Style.Animations>
+                        <Animation IterationCount="Infinite" Duration="0:0:2">
+                            <KeyFrame Cue="60%">
+                                <Setter Property="Effect" Value="blur(0)" />
+                            </KeyFrame>
+                            <KeyFrame Cue="70%">
+                                <Setter Property="Effect" Value="blur(12)" />
+                            </KeyFrame>
+                            <KeyFrame Cue="80%">
+                                <Setter Property="Effect" Value="blur(0)" />
+                            </KeyFrame>
+                        </Animation>
+                    </Style.Animations>
+                </Style>
+                <Style Selector="TextBlock#Block7">
+                    <Style.Animations>
+                        <Animation IterationCount="Infinite" Duration="0:0:2">
+                            <KeyFrame Cue="70%">
+                                <Setter Property="Effect" Value="blur(0)" />
+                            </KeyFrame>
+                            <KeyFrame Cue="80%">
+                                <Setter Property="Effect" Value="blur(12)" />
+                            </KeyFrame>
+                            <KeyFrame Cue="90%">
+                                <Setter Property="Effect" Value="blur(0)" />
+                            </KeyFrame>
+                        </Animation>
+                    </Style.Animations>
+                </Style>
+            </StackPanel.Styles>
+            <TextBlock x:Name="Block1" Effect="blur(8)" Text="L" />
+            <TextBlock x:Name="Block2" Effect="blur(8)" Text="o" />
+            <TextBlock x:Name="Block3" Effect="blur(8)" Text="a" />
+            <TextBlock x:Name="Block4" Effect="blur(8)" Text="d" />
+            <TextBlock x:Name="Block5" Effect="blur(8)" Text="i" />
+            <TextBlock x:Name="Block6" Effect="blur(8)" Text="n" />
+            <TextBlock x:Name="Block7" Effect="blur(8)" Text="g" />
+        </StackPanel>
+    </Grid>
+</UserControl>
