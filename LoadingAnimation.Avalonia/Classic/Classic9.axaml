@@ -1,0 +1,45 @@
+<UserControl x:Class="LoadingAnimation.Avalonia.Classic.Classic9"
+             xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="using:LoadingAnimation.Avalonia.Classic"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             d:DesignHeight="450"
+             d:DesignWidth="800"
+             mc:Ignorable="d">
+    <Grid Width="70"
+          HorizontalAlignment="Center"
+          VerticalAlignment="Center"
+          ClipToBounds="True">
+        <StackPanel Orientation="Horizontal">
+            <StackPanel.RenderTransform>
+                <TranslateTransform />
+            </StackPanel.RenderTransform>
+            <TextBlock Width="90" Text="{Binding $parent[local:Classic9].CaptionText}" />
+            <TextBlock Width="90" Foreground="{StaticResource AccentBrush}" Text="{Binding $parent[local:Classic9].CaptionText}" />
+            <TextBlock Width="90" Foreground="{StaticResource PrimaryBrush}" Text="{Binding $parent[local:Classic9].CaptionText}" />
+            <TextBlock Width="90" Text="{Binding $parent[local:Classic9].CaptionText}" />
+
+            <StackPanel.Styles>
+                <Style Selector="TextBlock">
+                    <Style.Animations>
+                        <Animation IterationCount="Infinite" Duration="0:0:3">
+                            <KeyFrame Cue="0%">
+                                <Setter Property="TranslateTransform.X" Value="0" />
+                            </KeyFrame>
+                            <KeyFrame Cue="33%">
+                                <Setter Property="TranslateTransform.X" Value="-90" />
+                            </KeyFrame>
+                            <KeyFrame Cue="66%">
+                                <Setter Property="TranslateTransform.X" Value="-180" />
+                            </KeyFrame>
+                            <KeyFrame Cue="100%">
+                                <Setter Property="TranslateTransform.X" Value="-270" />
+                            </KeyFrame>
+                        </Animation>
+                    </Style.Animations>
+                </Style>
+            </StackPanel.Styles>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -33,8 +33,14 @@
         <Border>
             <classic:Classic6 />
         </Border>
-		<Border>
-			<classic:Classic7 />
-		</Border>
+        <Border>
+            <classic:Classic7 />
+        </Border>
+        <Border>
+            <classic:Classic8 />
+        </Border>
+        <Border>
+            <classic:Classic9 />
+        </Border>
     </UniformGrid>
 </UserControl>
