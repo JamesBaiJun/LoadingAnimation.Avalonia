@@ -20,5 +20,8 @@
 		<Border>
 			<spinner:Spinner4 />
 		</Border>
+	    <Border>
+		    <spinner:Spinner5 />
+	    </Border>
     </UniformGrid>
 </UserControl>

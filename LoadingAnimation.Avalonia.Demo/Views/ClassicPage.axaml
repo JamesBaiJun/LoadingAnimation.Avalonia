@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:classic="using:LoadingAnimation.Avalonia.Classic"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:l="using:LoadingAnimation.Avalonia.LoadingControls.Demo"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="using:LoadingAnimation.Avalonia.Demo.ViewModels"
              d:DesignHeight="450"
